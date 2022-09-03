@@ -1,0 +1,98 @@
+import { type } from 'os';
+import React from 'react';
+import './App.css';
+
+
+let name: string;
+
+// Union number may be string or number:
+let age: number | string;
+let isStudent: boolean;
+
+// array:
+let hobbies: string[];
+
+// Tuple:
+let role: [number, String];
+role = [5, "abc"];
+
+
+// let printName: (name: string) => void;
+// void returns undefined but never dosn't returns any thing
+// let printName: (name: string) => number;
+
+
+
+// function printName(name: string){
+//   console.log(name);
+// }
+
+// printName("kattar");
+
+// Objects:
+
+// type Person = {
+//   name: string;
+//   // for optional
+//   age?: number;
+// }
+
+// let person: Person = {
+//   name:"kattar"
+// }
+
+
+// Array of object:
+
+// let lotsOfPerson: Person[]
+
+
+// Type & interfaces:
+
+// type X = {
+//   a: string,
+//   b:number,
+// }
+
+// type Y = X & {
+//   c: string,
+//   d:number,
+// }
+
+// this below will give the error b/c we didn't assing a, b some value
+
+// let y: Y = {
+//   c: "kattar",
+//   d:6
+// }
+
+
+
+// interface:
+
+interface X  {
+  a: string,
+  b:number,
+}
+
+interface Y extends X {
+  c: string,
+  d:number,
+}
+
+// this below will give the error b/c we didn't assing a, b some value
+
+// let y: Y = {
+//   c: "kattar",
+//   d:6
+// }
+
+function App() {
+  return (
+    <div className="App">
+      Hello World
+    </div>
+  );
+}
+
+export default App;
